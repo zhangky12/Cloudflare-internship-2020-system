@@ -18,8 +18,14 @@ sudo ./ping www.google.com
 ### 3.Send ICMP "echo requests" in an infinite loop
 The infinite while loop in main will keep sending icmp requests.
 
+![echo_requests](https://github.com/zhangky12/Cloudflare-internship-2020-system/blob/master/images/echo_requests.png
+)
+
 ### 4. Report loss and RTT times for each message
 RTT is retrieved from icmp_reply. When program is stopped by ctrl+C, statistics() will be called and print out loss.
+
+![RTT_loss](https://github.com/zhangky12/Cloudflare-internship-2020-system/blob/master/images/RTT_loss.png
+)
 
 ## Extra Credits
 ### Allow to set TTL as an argument and report the corresponding "time exceeded” ICMP messages
@@ -28,3 +34,6 @@ When the type of icmp_reply is ICMP_TIME_EXCEEDED, "Time to live exceede" will b
 ```
 sudo ./ping www.google.com 10
 ```
+
+![set_RTT](https://github.com/zhangky12/Cloudflare-internship-2020-system/blob/master/images/set_RTT.png
+)
