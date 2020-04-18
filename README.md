@@ -19,7 +19,7 @@ sudo ./ping www.google.com
 The infinite while loop in main will keep sending icmp requests.
 
 ![echo_requests](https://github.com/zhangky12/Cloudflare-internship-2020-system/blob/master/images/echo_requests.png
-| width=100)
+)
 
 ### 4. Report loss and RTT times for each message
 RTT is retrieved from icmp_reply. When program is stopped by ctrl+C, statistics() will be called and print out loss.
