@@ -25,3 +25,6 @@ RTT is retrieved from icmp_reply. When program is stopped by ctrl+C, statistics(
 ### Allow to set TTL as an argument and report the corresponding "time exceeded” ICMP messages
 When the type of icmp_reply is ICMP_TIME_EXCEEDED, "Time to live exceede" will be printed out.
 
+```
+sudo ./ping www.google.com 10
+```
